@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chaise N°3 – Noyer Italien | Chaise & Co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="theme-light">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Chaise & Co</div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="product.html" class="active">Produits</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="sur-mesure.html">Sur-Mesure</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+        <button id="cart-icon" class="cart-btn" aria-label="Ouvrir le panier">🛍️</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <main class="product-page container reveal">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a> / <a href="product.html">Produits</a> / Chaise N°3
+    </div>
+
+    <section class="product-hero-inner">
+      <!-- Galerie -->
+      <div class="product-gallery">
+        <img id="product-main" src="img/produit1.jpg" class="product-main" alt="Chaise N°3 – Noyer Italien" />
+
+        <div class="product-thumbs">
+          <img class="thumb active" src="img/produit1.jpg" data-large="img/produit1.jpg" alt="">
+          <img class="thumb" src="img/produit2.jpg" data-large="img/produit2.jpg" alt="">
+          <img class="thumb" src="img/produit3.jpg" data-large="img/produit3.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Infos produit -->
+      <div class="product-details">
+        <p class="product-category">Chaise pour chats & chiens</p>
+        <h1>Chaise N°3 – Noyer Italien</h1>
+        <p class="product-price-big">450€</p>
+
+        <p class="product-description">
+          Une pièce sculpturale en noyer italien, conçue pour cohabiter avec votre mobilier haut de gamme.
+          Courbes stables, assise confortable, finitions artisanales.
+        </p>
+
+        <div class="product-options">
+          <div class="option-group">
+            <p class="option-label">Essence de bois</p>
+            <div class="pill-row">
+              <button class="pill active">Noyer italien</button>
+              <button class="pill">Chêne clair</button>
+              <button class="pill">Noyer fumé</button>
+            </div>
+          </div>
+
+          <div class="option-group">
+            <p class="option-label">Taille</p>
+            <div class="pill-row">
+              <button class="pill active">S</button>
+              <button class="pill">M</button>
+              <button class="pill">L</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-cta">
+          <button
+            class="btn btn-primary glint-btn btn-full"
+            type="button"
+            id="product-add-cart"
+          >
+            Ajouter au panier
+          </button>
+          <p class="product-note">
+            Livraison offerte dès 350€ • Pièce numérotée • Atelier européen
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi c'est luxe -->
+    <section class="why-luxe reveal">
+      <h2>Pourquoi c’est luxe</h2>
+      <div class="why-grid">
+        <article>
+          <h3>Bois nobles</h3>
+          <p>Noyer italien sélectionné, séché lentement pour garantir stabilité et durabilité.</p>
+        </article>
+        <article>
+          <h3>Confort animal</h3>
+          <p>Assise pensée pour respecter la posture naturelle des chats et chiens.</p>
+        </article>
+        <article>
+          <h3>Design sculptural</h3>
+          <p>Silhouette graphique qui devient une véritable pièce centrale de votre intérieur.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Compléter l'ambiance -->
+    <section class="complete-section reveal">
+      <h2>Complète l’ambiance</h2>
+      <div class="product-grid">
+        <article
+          class="product-card"
+          data-quickview
+          data-name="Niche de Salon – Velours Champagne"
+          data-price="390"
+          data-img="img/produit2.jpg"
+          data-tag="Niche de salon"
+          data-description="Velours champagne, structure bois, parfaite pour les intérieurs clairs."
+        >
+          <div class="product-image">
+            <img src="img/produit2.jpg" alt="">
+          </div>
+          <div class="product-info">
+            <h3><a href="product.html">Niche de Salon – Velours Champagne</a></h3>
+            <span>390€</span>
+          </div>
+          <button type="button" class="product-quick">Aperçu rapide</button>
+        </article>
+
+        <article
+          class="product-card"
+          data-quickview
+          data-name="Lit Pod – Bouclé Ivoire"
+          data-price="410"
+          data-img="img/produit3.jpg"
+          data-tag="Lit cocon"
+          data-description="Forme enveloppante, bouclé ivoire, confort maximal."
+        >
+          <div class="product-image">
+            <img src="img/produit3.jpg" alt="">
+          </div>
+          <div class="product-info">
+            <h3><a href="product.html">Lit Pod – Bouclé Ivoire</a></h3>
+            <span>410€</span>
+          </div>
+          <button type="button" class="product-quick">Aperçu rapide</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- QUICK VIEW -->
+  <div class="quickview-overlay" id="quickview-overlay">
+    <div class="quickview" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+      <button class="quickview-close" id="quickview-close" aria-label="Fermer">×</button>
+      <div class="quickview-inner">
+        <div class="quickview-image">
+          <img id="qv-image" src="" alt="">
+        </div>
+        <div class="quickview-info">
+          <p class="quickview-tag" id="qv-tag"></p>
+          <h3 id="qv-title"></h3>
+          <p class="quickview-price" id="qv-price"></p>
+          <p class="quickview-description" id="qv-description"></p>
+
+          <div class="quickview-actions">
+            <button
+              class="btn btn-primary glint-btn"
+              id="qv-add-cart"
+              type="button"
+            >
+              Ajouter au panier
+            </button>
+            <a href="product.html" class="btn btn-outline glint-btn">Voir la fiche produit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MINI PANIER -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-panel" id="cart-panel">
+    <button class="cart-close" id="cart-close" aria-label="Fermer le panier">×</button>
+    <h3 class="cart-title">Votre sélection</h3>
+    <div class="cart-items" id="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cart-total">0€</strong>
+      </div>
+      <button class="btn btn-primary glint-btn cart-checkout" type="button">
+        Passer au paiement
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Chaise & Co</h4>
+        <p>Meubles design haut de gamme pour chats & chiens.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="product.html">Produits</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="sur-mesure.html">Sur-Mesure</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>contact@chaiseandco.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

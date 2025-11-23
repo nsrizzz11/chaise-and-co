@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sur-Mesure — Chaise & Co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="theme-light">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Chaise & Co</div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="product.html">Produits</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="sur-mesure.html" class="active">Sur-Mesure</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+        <button id="cart-icon" class="cart-btn" aria-label="Ouvrir le panier">🛍️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BARRE DE PROGRESSION -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- PAGE SUR-MESURE -->
+  <main class="custom-page">
+    <div class="container">
+      <!-- HERO -->
+      <section class="custom-hero reveal">
+        <p class="custom-eyebrow">Atelier Sur-Mesure</p>
+        <h1>Pièces dessinées pour<br>un seul intérieur&nbsp;: le vôtre.</h1>
+        <p class="custom-intro">
+          Une chaise, un lit ou une niche pensée exclusivement pour votre compagnon
+          et votre espace. Proportions, matières, finitions&nbsp;: tout est ajusté
+          à la demande, comme une pièce de couture.
+        </p>
+      </section>
+
+      <!-- LAYOUT -->
+      <section class="custom-layout reveal">
+        <!-- Colonne gauche : process + mood -->
+        <div class="custom-text">
+          <h2>Processus couture</h2>
+          <ol>
+            <li>Premier échange autour de votre intérieur, de votre compagnon et de vos envies.</li>
+            <li>Propositions de formes, matières et combinaisons possibles.</li>
+            <li>Validation d’un croquis et d’un budget estimatif.</li>
+            <li>Fabrication en atelier, pièce numérotée et certifiée.</li>
+          </ol>
+
+          <div class="custom-moodboard">
+            <h3>Inspiration matières</h3>
+            <div class="mood-tags">
+              <span>Bouclé ivoire</span>
+              <span>Noyer fumé</span>
+              <span>Velours champagne</span>
+              <span>Laiton doux</span>
+            </div>
+            <p>
+              Nous travaillons uniquement avec des essences nobles et des textures
+              pensées pour cohabiter avec votre mobilier existant.
+            </p>
+          </div>
+        </div>
+
+        <!-- Colonne droite : formulaire haute couture -->
+        <form class="custom-form" id="custom-form">
+          <h3>Parlons de votre projet</h3>
+          <p class="custom-form-sub">
+            Quelques détails pour que nous puissions revenir vers vous avec une proposition précise.
+          </p>
+
+          <div class="field-row">
+            <div class="field">
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                class="field-input"
+                placeholder=" "
+                required
+              />
+              <label for="prenom" class="field-label">Votre prénom</label>
+            </div>
+
+            <div class="field">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="field-input"
+                placeholder=" "
+                required
+              />
+              <label for="email" class="field-label">Email</label>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <select id="animal" name="animal" class="field-input select-input" required>
+                <option value="" disabled selected hidden></option>
+                <option value="chat">Chat</option>
+                <option value="chien">Chien</option>
+                <option value="deux">Les deux</option>
+              </select>
+              <label for="animal" class="field-label">Type de compagnon</label>
+            </div>
+
+            <div class="field">
+              <select id="piece" name="piece" class="field-input select-input" required>
+                <option value="" disabled selected hidden></option>
+                <option>Chaise</option>
+                <option>Lit</option>
+                <option>Niche</option>
+                <option>Autre mobilier</option>
+              </select>
+              <label for="piece" class="field-label">Pièce souhaitée</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <input
+              type="text"
+              id="style"
+              name="style"
+              class="field-input"
+              placeholder=" "
+            />
+            <label for="style" class="field-label">Style de votre intérieur</label>
+            <p class="field-hint">Ex&nbsp;: minimaliste, haussmannien, brutaliste…</p>
+          </div>
+
+          <div class="field">
+            <input
+              type="text"
+              id="budget"
+              name="budget"
+              class="field-input"
+              placeholder=" "
+            />
+            <label for="budget" class="field-label">Budget indicatif</label>
+            <p class="field-hint">Ex&nbsp;: 600–900€ pour une pièce principale.</p>
+          </div>
+
+          <div class="field">
+            <textarea
+              id="description"
+              name="description"
+              class="field-input field-textarea"
+              rows="5"
+              placeholder=" "
+            ></textarea>
+            <label for="description" class="field-label">Décrivez votre projet</label>
+            <p class="field-hint">
+              Parlez-nous de votre espace, des contraintes, des matériaux rêvés,
+              des habitudes de votre compagnon…
+            </p>
+          </div>
+
+          <button class="btn btn-primary glint-btn btn-full" type="submit">
+            Demander un projet sur-mesure
+          </button>
+          <p class="custom-note">
+            Nous vous répondrons sous quelques jours ouvrés avec une première proposition de pistes
+            (sans engagement).
+          </p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- MINI PANIER -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-panel" id="cart-panel">
+    <button class="cart-close" id="cart-close" aria-label="Fermer le panier">×</button>
+    <h3 class="cart-title">Votre sélection</h3>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cart-total">0€</strong>
+      </div>
+      <button class="btn btn-primary glint-btn cart-checkout" type="button">
+        Passer au paiement
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Chaise & Co</h4>
+        <p>Meubles design haut de gamme pour chats & chiens.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="product.html">Produits</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="sur-mesure.html">Sur-Mesure</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>contact@chaiseandco.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

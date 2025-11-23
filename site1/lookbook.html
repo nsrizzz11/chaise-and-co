@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lookbook – Chaise & Co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="theme-light">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Chaise & Co</div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="product.html">Produits</a>
+        <a href="lookbook.html" class="active">Lookbook</a>
+        <a href="sur-mesure.html">Sur-Mesure</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+        <button id="cart-icon" class="cart-btn" aria-label="Ouvrir le panier">🛍️</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <main class="lookbook-page container">
+    <section class="lookbook-hero reveal">
+      <h1>Lookbook Éditorial</h1>
+      <p>Ambiances, matières et silhouettes. L’univers visuel de Chaise & Co.</p>
+    </section>
+
+    <section class="lookbook-grid-section reveal">
+      <div class="lookbook-grid">
+        <article class="lookbook-item tall"
+          data-quickview
+          data-name="Studio Noyer & Bouclé"
+          data-price="—"
+          data-img="img/look1.jpg"
+          data-tag="Ambiance studio"
+          data-description="Noyer profond, bouclé blanc, lumière douce : l’essence de Chaise & Co."
+        >
+          <img src="img/look1.jpg" alt="">
+          <span class="lookbook-caption">Look 01 — Studio</span>
+        </article>
+
+        <article class="lookbook-item"
+          data-quickview
+          data-name="Salon Champagne"
+          data-price="—"
+          data-img="img/look2.jpg"
+          data-tag="Salon"
+          data-description="Velours champagne et bois clair, pour un salon lumineux et apaisé."
+        >
+          <img src="img/look2.jpg" alt="">
+          <span class="lookbook-caption">Look 02 — Salon</span>
+        </article>
+
+        <article class="lookbook-item wide"
+          data-quickview
+          data-name="Arc Minimal"
+          data-price="—"
+          data-img="img/look3.jpg"
+          data-tag="Arc graphique"
+          data-description="Lignes arquées et volumes bas pour un coin lecture partagé."
+        >
+          <img src="img/look3.jpg" alt="">
+          <span class="lookbook-caption">Look 03 — Arche</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- QUICK VIEW -->
+  <div class="quickview-overlay" id="quickview-overlay">
+    <div class="quickview" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+      <button class="quickview-close" id="quickview-close" aria-label="Fermer">×</button>
+      <div class="quickview-inner">
+        <div class="quickview-image">
+          <img id="qv-image" src="" alt="">
+        </div>
+        <div class="quickview-info">
+          <p class="quickview-tag" id="qv-tag"></p>
+          <h3 id="qv-title"></h3>
+          <p class="quickview-price" id="qv-price"></p>
+          <p class="quickview-description" id="qv-description"></p>
+
+          <div class="quickview-actions">
+            <a href="product.html" class="btn btn-outline glint-btn">Découvrir la collection</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MINI PANIER -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-panel" id="cart-panel">
+    <button class="cart-close" id="cart-close" aria-label="Fermer le panier">×</button>
+    <h3 class="cart-title">Votre sélection</h3>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cart-total">0€</strong>
+      </div>
+      <button class="btn btn-primary glint-btn cart-checkout" type="button">
+        Passer au paiement
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Chaise & Co</h4>
+        <p>Meubles design haut de gamme pour chats & chiens.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="product.html">Produits</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="sur-mesure.html">Sur-Mesure</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>contact@chaiseandco.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
